@@ -1,0 +1,5 @@
+{
+    "require": {
+        "ptejada/uflex": "1.*"
+    }
+}
