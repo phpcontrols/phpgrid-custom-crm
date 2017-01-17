@@ -136,6 +136,10 @@ $dg -> display();
 .ui-tabs-panel.ui-widget-content.ui-corner-bottom{
     padding:0;
 }
+.ui-tabs .ui-tabs-nav li a{
+    padding:.5em;
+    font-weight: 600;
+}
 </style>
 
 
