@@ -8,12 +8,13 @@ include_once('../inc/head.php');
 
 <h1>My Custom CRM - Sales Pipeline</h1>
 
+<section id="subtitle">
 <h2>Welcome! Manager</h2>
 <div>
 You can manage your sales team and contacts here.
 </div>
-
 <br />
+</section>
 
 <?php
 //$_GET['currentPage'] = 'pipeline';

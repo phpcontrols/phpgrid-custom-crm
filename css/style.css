@@ -45,3 +45,6 @@ body {
   background-color: #efefef;
   text-align: center;
 }
+.ui-tabs-panel #subtitle{
+  display:none;
+}
