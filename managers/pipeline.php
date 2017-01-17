@@ -6,7 +6,14 @@ require_once("../phpGrid/conf.php");
 include_once('../inc/head.php');
 ?>
 
-<h1>Custom CRM - Sales Pipeline</h1>
+<h1>My Custom CRM - Sales Pipeline</h1>
+
+<h2>Welcome! Manager</h2>
+<div>
+You can manage your sales team and contacts here.
+</div>
+
+<br />
 
 <?php
 //$_GET['currentPage'] = 'pipeline';

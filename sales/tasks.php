@@ -6,14 +6,14 @@ require_once("../phpGrid/conf.php");
 include_once('../inc/head.php');
 ?>
 
-<h1>Custom CRM</h1>
+<h1>My Custom CRM</h1>
 
 <?php
 $_GET['currentPage'] = 'tasks';
 include_once('../inc/menu.php');
 ?>
 
-<h2>Welcome to the CRM Dashboard</h1>
+<h2>Welcome!</h1>
 <div>
 Choose an option from the menu above or view your current tasks below.
 </div>
