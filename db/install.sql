@@ -96,7 +96,7 @@ LOCK TABLES `contact_status` WRITE;
 INSERT INTO `contact_status` (`id`, `status`)
 VALUES
 	(1,'lead'),
-	(2,'proposal'),
+	(2,'opportunity'),
 	(3,'customer/won'),
 	(4,'archive');
 

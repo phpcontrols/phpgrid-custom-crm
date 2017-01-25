@@ -69,41 +69,6 @@ $grid = $dg -> get_display(false);
 $dg -> display_script_includeonce();
 ?>
 
-<?php
-/*
-$dg = new C_DataGrid("SELECT id, Name_First, Name_Last, Email, Password FROM users", "id", "users");
-$dg->set_query_filter(" user_roles = 1 ");
-$dg->set_col_hidden('id')->set_col_hidden('User_Roles')->set_col_hidden('User_Status')->set_col_hidden('Password')->set_caption(' ');
-$dg->set_dimension('800px');
-$dg->enable_edit();
-$dg -> display();
-
-// Tasks
-$dg = new C_DataGrid("SELECT id, Todo_Desc_ID, Todo_Due_Date, Contact, Task_Status, Sales_Rep FROM notes", "id", "notes");
-$dg->set_query_filter(" Todo_Due_Date != '' ");
-$dg->set_col_hidden('id')->set_caption(' ');;
-
-$dg->set_col_edittype('Todo_Desc_ID', 'select', "select id, description from todo_desc");
-$dg->set_col_edittype('Contact', 'select', "select id, concat(contact_first, ' ', contact_last) from contact");
-$dg->set_col_edittype('Task_Status', 'select', "select id, status from task_status");
-$dg->set_col_edittype('Sales_Rep', 'select', "select id, concat(name_first, ' ', name_last) from users");
-
-$dg -> display();
-
-// Contacts
-$dg = new C_DataGrid("SELECT id, contact_last, contact_title, company, industry, status, budget, sales_rep, rating FROM contact", "id", "contact");
-$dg->set_col_hidden('id')->set_caption(' ');
-$dg->set_col_edittype('sales_rep', 'select', "select id, concat(name_first, ' ', name_last) from users");
-$dg->set_col_currency('budget');
-$dg->enable_global_search(true);
-$dg->enable_edit();
-
-$dg -> display();
-*/
-?>
-
-
-
 <script>
   $( function() {
     $( "#tabs" ).tabs({

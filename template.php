@@ -1,8 +1,6 @@
 <?php
 use phpGrid\C_DataGrid;
-
 require_once("../phpGrid/conf.php");      
-
 include_once('../inc/head.php');
 ?>
 

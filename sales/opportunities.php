@@ -9,11 +9,11 @@ include_once('../inc/head.php');
 <h1>My Custom CRM</h1>
 
 <?php
-$_GET['currentPage'] = 'proposal';
+$_GET['currentPage'] = 'opportunities';
 include_once('../inc/menu.php');
 ?>
 
-<h3>Proposals</h2>
+<h3>Opportunities</h2>
 <?php
 // $dg = new C_DataGrid("SELECT id, contact_last, company, phone, email, website, Status, project_type, budget FROM contact", "id", "contact");
 $dg = new C_DataGrid("SELECT * FROM contact", "id", "contact");

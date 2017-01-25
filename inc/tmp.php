@@ -53,7 +53,7 @@ body {
     <ul>
         <li><a href="dashboard.php" class="active">Dashboard</a></li>
         <li><a href="leads.php">Leads</a></li>
-        <li><a href="proposal.php">Proposal</a></li>
+        <li><a href="opportunities.php">Opportunities</a></li>
         <li><a href="customerwon.php">Customer/Won</a></li>
         <li><a href="calendar.php">Calendar</a></li>
     </ul>
