@@ -25,7 +25,7 @@ $dg -> set_col_format("email", "email");
 $dg->set_col_edittype('status', 'select', 'SELECT ID, status FROM contact_status');
 $dg -> set_col_link("website");
 $dg->enable_edit();
-$dg->set_scroll(true, 300);
+$dg->set_scroll(true, 200);
 
 $sdg = new C_DataGrid("SELECT * FROM notes", "id", "notes");
 $sdg->set_query_filter(" Sales_Rep = 1 ");
