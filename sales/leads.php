@@ -15,10 +15,14 @@ include_once('../inc/menu.php');
 
 <h3>My Leads</h2>
 <?php
-$dg = new C_DataGrid("SELECT id, contact_last, company, phone, email, website, Status, lead_referral_source, sales_rep, date_of_initial_contact FROM contact", "id", "contact");
-$dg->set_query_filter(" Status = 1 && sales_rep = 1 ");
+$dg = new C_DataGrid("SELECT id, contact_first, contact_last, company, phone, email, website, status, lead_referral_source, sales_rep, lead_referral_source, date_of_initial_contact, title, industry, background_info, rating, project_type, project_description, budget FROM contact", "id", "contact");
+$dg->set_query_filter(" status = 1 && sales_rep = 1 ");
 $dg->set_col_hidden('id')->set_col_hidden('Status')->set_col_hidden('sales_rep', false);
+
+$dg->set_col_hidden('lead_referral_source, title, industry, background_info, rating, project_type, project_description, budget');
+
 $dg -> set_col_format("email", "email");
+$dg->set_col_edittype('status', 'select', 'SELECT ID, status FROM contact_status');
 $dg -> set_col_link("website");
 $dg->enable_edit();
 $dg->set_scroll(true, 300);
