@@ -48,7 +48,7 @@ CREATE TABLE `contact` (
   `Status` int(11) unsigned NOT NULL,
   `Website` varchar(23) NOT NULL,
   `LinkedIn_Profile` varchar(21) NOT NULL,
-  `Background_Info` varchar(62) NOT NULL,
+  `Background_Info` text NOT NULL,
   `Sales_Rep` int(11) unsigned NOT NULL,
   `Rating` decimal(4,2) NOT NULL,
   `Project_Type` varchar(35) DEFAULT NULL,
