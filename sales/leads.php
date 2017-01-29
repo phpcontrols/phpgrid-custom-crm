@@ -34,7 +34,7 @@ $sdg->set_col_edittype('Is_New_Todo', 'select', '0:No;1:Yes');
 $sdg->set_col_edittype('Todo_Type_ID', 'select', 'Select id, type From todo_type');
 $sdg->set_col_edittype('Todo_Desc_ID', 'select', 'Select id, description From todo_desc');
 //$sdg->set_col_default('Contact', ###current####);
-$sdg->set_col_default('Sales_Rep', 1);
+$sdg->set_col_default('Sales_Rep', 1); // TODO: obtain from SESSION
 
 $sdg->enable_edit();
 $dg->set_masterdetail($sdg, 'Contact', 'id');
