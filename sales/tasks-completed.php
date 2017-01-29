@@ -13,11 +13,11 @@ $_GET['currentPage'] = 'tasks';
 include_once('../inc/menu.php');
 ?>
 
-<h3>My Current Tasks | <a href="tasks-completed.php">My Completed Tasks</a></h3>
+<h3><a href="tasks.php">My Current Tasks</a> | My Completed Tasks</h3>
 
 <?php
 $dg = new C_DataGrid("SELECT ID, `Date`, contact, todo_type_id, todo_desc_id, task_status, Task_Update, sales_rep, todo_due_date FROM notes", "ID", "notes");
-$dg->set_query_filter(" sales_rep = 1 && task_status != 2");
+$dg->set_query_filter(" sales_rep = 1 && task_status = 2");
 
 $dg->set_col_hidden('ID')->set_col_hidden('sales_rep', false)->set_caption(' ');
 
@@ -30,15 +30,6 @@ $dg->set_col_edittype('contact', 'select', 'SELECT ID, Contact_Last FROM Contact
 $dg->set_col_edittype('todo_type_id', 'select', 'SELECT ID, Type FROM todo_type');
 $dg->set_col_edittype('todo_desc_id', 'select', 'SELECT ID, Description FROM todo_desc');
 
-$dg->add_column("actions", array('name'=>'actions',
-    'index'=>'actions',
-    'width'=>'70',
-    'formatter'=>'actions',
-    'formatoptions'=>array('keys'=>true, 'editbutton'=>true, 'delbutton'=>false)),'Actions');
-
-$dg->set_col_readonly('Date, contact, todo_type_id, todo_desc_id, sales_rep, todo_due_date');
-
-$dg->enable_edit('INLINE');
 $dg->set_scroll(true, 200);
 $dg -> display();
 ?>
