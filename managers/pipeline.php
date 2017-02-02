@@ -46,6 +46,8 @@ switch($tableName){
         $dg->set_col_currency('budget');
         $dg->enable_global_search(true);
 
+        $dg->set_col_format('rating', 'rating');
+
         $sdg = new C_DataGrid("SELECT * FROM notes", "id", "notes");
         // $sdg->set_query_filter(" Sales_Rep = 1 ");
         $sdg->set_col_hidden('id', false)->set_col_hidden('Contact', false);
@@ -63,15 +65,15 @@ switch($tableName){
 }
 
 $dg->enable_edit()->set_dimension('1100');
+
 $dg -> display(false);
 $grid = $dg -> get_display(false);
 
 $dg -> display_script_includeonce();
 ?>
-
 <script>
   $( function() {
-    $( "#tabs" ).tabs({
+      $( "#tabs" ).tabs({
         beforeLoad: function(event, ui) {
             if(ui.panel.html() == ""){
                 ui.panel.html('<div class="loading">Loading...</div>');
