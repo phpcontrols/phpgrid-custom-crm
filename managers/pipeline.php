@@ -27,14 +27,27 @@ switch($tableName){
         $dg->set_query_filter(" user_roles = 1 ");
         $dg->set_col_hidden('id')->set_col_hidden('User_Roles')->set_col_hidden('User_Status')->set_col_hidden('Password');
         $dg->set_caption(' ');   
+        $dg->set_dimension(600, 420);
 
         $sdg = new C_DataGrid("SELECT id, contact_last, contact_title, company, industry, status, budget, sales_rep, rating FROM contact", "id", "contact");
-        $sdg->set_col_hidden('id')->set_caption(' ');
+        $sdg->set_col_hidden('id')->set_col_hidden('sales_rep', false);
+        $sdg->set_caption(' ');
         $sdg->set_col_edittype('sales_rep', 'select', "select id, concat(name_first, ' ', name_last) from users");
         $sdg->set_col_currency('budget');
         //$sdg->set_col_format('rating', 'rating');
 
-        $dg->set_masterdetail($sdg, 'sales_rep', 'id');
+$gridComplete = <<<GRIDCOMPLETE
+function ()
+{
+    rowIds = $("#users").getDataIDs();
+    $.each(rowIds, function (index, rowId) {
+        $("#users").expandSubGridRow(rowId);
+    });
+}
+GRIDCOMPLETE;
+
+        $dg->add_event("jqGridLoadComplete", $gridComplete);
+        $dg->set_subgrid($sdg, 'sales_rep', 'id');
         break;
 
     case "notes":
