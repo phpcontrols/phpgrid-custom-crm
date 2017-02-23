@@ -26,7 +26,7 @@ $dg->set_col_title('todo_desc_id', 'Description');
 $dg->set_col_title('todo_due_date', 'Due Date');
 
 $dg->set_col_edittype('task_status', 'select', 'SELECT ID, status FROM task_status');
-$dg->set_col_edittype('contact', 'select', 'SELECT ID, Contact_Last FROM Contact');
+$dg->set_col_edittype('contact', 'select', 'SELECT ID, Contact_Last FROM contact');
 $dg->set_col_edittype('todo_type_id', 'select', 'SELECT ID, Type FROM todo_type');
 $dg->set_col_edittype('todo_desc_id', 'select', 'SELECT ID, Description FROM todo_desc');
 

@@ -16,19 +16,19 @@ include_once('../inc/menu.php');
 <h3><a href="tasks.php">My Current Tasks</a> | My Completed Tasks</h3>
 
 <?php
-$dg = new C_DataGrid("SELECT ID, `Date`, contact, todo_type_id, todo_desc_id, task_status, Task_Update, sales_rep, todo_due_date FROM notes", "ID", "notes");
-$dg->set_query_filter(" sales_rep = 1 && task_status = 2");
+$dg = new C_DataGrid("SELECT ID, `Date`, Contact, Todo_Type_ID, Todo_Desc_ID, Task_Status, Task_Update, Sales_Rep, Todo_Due_Date FROM notes", "ID", "notes");
+$dg->set_query_filter(" Sales_Rep = 1 && Task_Status = 2");
 
-$dg->set_col_hidden('ID')->set_col_hidden('sales_rep', false)->set_caption(' ');
+$dg->set_col_hidden('ID')->set_col_hidden('Sales_Rep', false)->set_caption(' ');
 
-$dg->set_col_title('todo_type_id', 'Type');
-$dg->set_col_title('todo_desc_id', 'Description');
-$dg->set_col_title('todo_due_date', 'Due Date');
+$dg->set_col_title('Todo_Type_ID', 'Type');
+$dg->set_col_title('Todo_Desc_ID', 'Description');
+$dg->set_col_title('Todo_Due_Date', 'Due Date');
 
-$dg->set_col_edittype('task_status', 'select', 'SELECT ID, status FROM task_status');
-$dg->set_col_edittype('contact', 'select', 'SELECT ID, Contact_Last FROM Contact');
-$dg->set_col_edittype('todo_type_id', 'select', 'SELECT ID, Type FROM todo_type');
-$dg->set_col_edittype('todo_desc_id', 'select', 'SELECT ID, Description FROM todo_desc');
+$dg->set_col_edittype('Task_Status', 'select', 'SELECT ID, status FROM task_status');
+$dg->set_col_edittype('Contact', 'select', 'SELECT ID, Contact_Last FROM contact');
+$dg->set_col_edittype('Todo_Type_ID', 'select', 'SELECT ID, type FROM todo_type');
+$dg->set_col_edittype('Todo_Desc_ID', 'select', 'SELECT ID, description FROM todo_desc');
 
 $dg->set_scroll(true, 200);
 $dg -> display();
