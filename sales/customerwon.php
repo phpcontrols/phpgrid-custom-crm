@@ -6,7 +6,7 @@ require_once("../phpGrid/conf.php");
 include_once('../inc/head.php');
 ?>
 
-<h1>Custom CRM</h1>
+<h1>My Custom CRM</h1>
 
 <?php
 $_GET['currentPage'] = 'customerwon';
