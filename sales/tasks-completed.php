@@ -1,8 +1,5 @@
 <?php
-use phpGrid\C_DataGrid;
-
-require_once("../phpGrid/conf.php");      
-
+include_once("../phpGrid_Lite/conf.php");      
 include_once('../inc/head.php');
 ?>
 
@@ -19,7 +16,7 @@ include_once('../inc/menu.php');
 $dg = new C_DataGrid("SELECT ID, `Date`, Contact, Todo_Type_ID, Todo_Desc_ID, Task_Status, Task_Update, Sales_Rep, Todo_Due_Date FROM notes", "ID", "notes");
 $dg->set_query_filter(" Sales_Rep = 1 && Task_Status = 2");
 
-$dg->set_col_hidden('ID')->set_col_hidden('Sales_Rep', false)->set_caption(' ');
+$dg->set_col_hidden('ID')->set_col_hidden('Sales_Rep', false)->set_caption('Completed');
 
 $dg->set_col_title('Todo_Type_ID', 'Type');
 $dg->set_col_title('Todo_Desc_ID', 'Description');
@@ -30,7 +27,6 @@ $dg->set_col_edittype('Contact', 'select', 'SELECT ID, Contact_Last FROM contact
 $dg->set_col_edittype('Todo_Type_ID', 'select', 'SELECT ID, type FROM todo_type');
 $dg->set_col_edittype('Todo_Desc_ID', 'select', 'SELECT ID, description FROM todo_desc');
 
-$dg->set_scroll(true, 200);
 $dg -> display();
 ?>
 

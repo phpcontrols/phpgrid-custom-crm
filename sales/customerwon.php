@@ -1,8 +1,5 @@
 <?php
-use phpGrid\C_DataGrid;
-
-require_once("../phpGrid/conf.php");      
-
+include_once("../phpGrid_Lite/conf.php");      
 include_once('../inc/head.php');
 ?>
 
@@ -19,7 +16,7 @@ include_once('../inc/menu.php');
 $dg = new C_DataGrid("SELECT * FROM contact", "id", "contact");
 $dg->set_query_filter(" Status = 3  && sales_rep = 1 ");
 
-$dg->set_col_hidden('id')->set_col_hidden('Status')->set_caption(' ');
+$dg->set_col_hidden('id')->set_col_hidden('Status')->set_caption('Customers');
 $dg->set_col_hidden('Date_of_Initial_Contact');
 $dg->set_col_hidden('Contact_Title')->set_col_hidden('Contact_Middle')->set_col_hidden('Lead_Referral_Source');
 $dg->set_col_hidden('Address')->set_col_hidden('Address_Street_1')->set_col_hidden('Address_Street_2');
@@ -43,7 +40,8 @@ $sdg->set_col_edittype('Todo_Desc_ID', 'select', 'Select id, description From to
 $sdg->set_col_default('Sales_Rep', 1); // TODO: obtain from SESSION
 $sdg->enable_edit();
 
-$dg->set_masterdetail($sdg, 'Contact', 'id');
+
+$dg->set_subgrid($sdg, 'Contact', 'id');
 $dg -> display();
 ?>
 
