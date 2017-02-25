@@ -1,0 +1,65 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="817" measuredH="664" mockupW="791" mockupH="494">
+  <controls>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::MenuBar" x="185" y="270" w="632" h="29" measuredW="252" measuredH="29" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>0</selectedIndex>
+        <text>My%20Sales%20Reps%2C%20Tasks%2C%20Contacts</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::DataGrid" x="185" y="325" w="629" h="339" measuredW="469" measuredH="443" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <borderStyle>square</borderStyle>
+        <hasHeader>true</hasHeader>
+        <hLines>false</hLines>
+        <text>Sales%20Rep%20%5E%2C%20Name%20First%20%5Ev%2C%20Name%20Last%2C%20Email%20v%0AJohnny%20Rep%2C%20John%2C%20Rep%2C%20jr@example.com%0A%20%0A%20%0A%20%0A%20%0A%20%0AMarco%20Botton%2C%20Marco%2C%20Botton%2C%20mm@example.com%0AMariah%20Maclachlan%2C%20Mar%2C%20Maclachlan%2C%20mm2@example.com%0A%20%0A%20%0A%20%0A%20%0AValerie%20Liberty%5CrHead%20Chef%2C%20%3A%29%2C%20Val%2C%20%5Bx%5D%0AGuido%20Jack%20Guilizzoni%2C%206%2C%20The%20Guids%2C%20%5B%5D%0A%7B65L%2C%200R%2C%2035%2C%200C%7D</text>
+        <verticalScrollbar>true</verticalScrollbar>
+        <vLines>true</vLines>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::SubTitle" x="217" y="375" w="71" h="-1" measuredW="62" measuredH="17" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>14</size>
+        <text>Contacts</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Tree" x="193" y="390" w="321" h="132" measuredW="300" measuredH="225" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0</backgroundAlpha>
+        <borderStyle>none</borderStyle>
+        <text>v%20Giacomo%20Guilizzoni%0A.-%20Note%201%2C%20todo%2C%20need%20to%20set%20up%20call%20%0A.-%20Note%202%2C%20anothe%2C%20need%20to%20follow%20up%0A.-%20Note%203%2C%20OK%2C%20almost%20closing%0A.-%20Note%204%2C%20todo%2C%20budget%20discussion%0A.-%20Note%205%2C%20todo%2C%20another%20one</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Tree" x="193" y="602" w="318" h="52" measuredW="300" measuredH="225" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0</backgroundAlpha>
+        <borderStyle>none</borderStyle>
+        <text>v%20Better%20Half%0A.-%20Note%201%2C%20todo%2C%20need%20to%20set%20up%20call%20%0A.-%20Note%202%2C%20anothe%2C%20need%20to%20follow%20up%0A.-%20Note%203%2C%20OK%2C%20almost%20closing%0A.-%20Note%204%2C%20todo%2C%20budget%20discussion%0A.-%20Note%205%2C%20todo%2C%20another%20one</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::SubTitle" x="220" y="585" w="71" h="-1" measuredW="62" measuredH="17" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>14</size>
+        <text>Contacts</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Title" x="176" y="170" w="-1" h="-1" measuredW="601" measuredH="43" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>My%20Custom%20CRM%20-%20Sales%20Pipeline</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="176" y="228" w="-1" h="-1" measuredW="311" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>You%20can%20manage%20your%20sales%20team%20and%20contacts%20here.</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::VCurly" x="26" y="420" w="159" h="86" measuredW="180" measuredH="140" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>right</direction>
+        <text>Sales%20Rep%20-%3E%20Contact%0Asubgrid</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
